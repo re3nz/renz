@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Page</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>For My Love</h1>
+        <p>You mean the world to me, and I want to express my love for you:</p>
+        <button id="loveButton">Click to Reveal My Love</button>
+        <p id="loveMessage">I love you more than words can express! Your love fills my heart with a warmth that defies expression. It's a feeling so profound, akin to the heartfelt lyrics of Bruno Mars in "Just the Way You Are," where he croons, "When I see your face, there's not a thing that I would change, 'cause you're amazing just the way you are." These words resonate with me because they encapsulate my sentiments towards you. Your presence brightens my world, and I cherish every moment we share. I love you more than words can convey, deeper than the oceans, higher than the skies, and broader than the universe. You are the embodiment of perfection in my eyes, and I am endlessly grateful for your presence in my life.</p>
+        <p>"When I see your face, there's not a thing that I would change,<br>
+        'Cause you're amazing just the way you are."</p>
+    </div>
+
+    <!-- Add background music from a URL -->
+    <audio id="backgroundMusic" src="Bruno Mars - Just the Way You Are (Lyrics)(MP3_160K).mp3" autoplay loop></audio>
+
+    <script>
+        const loveButton = document.getElementById('loveButton');
+        const loveMessage = document.getElementById('loveMessage');
+        const backgroundMusic = document.getElementById('backgroundMusic');
+
+        loveButton.addEventListener('click', () => {
+            loveButton.style.display = 'none';
+            loveMessage.style.display = 'block';
+            // Play the background music when the love message is revealed
+            backgroundMusic.play();
+        });
+    </script>
+</body>
+</html>
